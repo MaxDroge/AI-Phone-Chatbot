@@ -1,0 +1,25 @@
+{
+"name": "voice-agent",
+"type": "module",
+"scripts": {
+"dev": "tsx src/server.ts",
+"embed": "tsx src/rag/embed.ts",
+"index-site": "tsx src/rag/indexSite.ts",
+"start": "node --enable-source-maps dist/server.js"
+},
+"dependencies": {
+"axios": "^1.7.2",
+"cors": "^2.8.5",
+"dotenv": "^16.4.5",
+"express": "^4.19.2",
+"ws": "^8.17.1",
+"twilio": "^5.3.5",
+"zod": "^3.23.8",
+"ml-distance": "^4.0.1",
+"@xenova/transformers": "^2.14.0"
+},
+"devDependencies": {
+"tsx": "^4.19.0",
+"typescript": "^5.6.3"
+}
+}
