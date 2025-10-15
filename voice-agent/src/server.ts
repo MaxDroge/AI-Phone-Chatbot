@@ -1,7 +1,8 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import { twiml as TwiML } from 'twilio';
+import Twilio from 'twilio';
+const { twiml: TwiML } = Twilio;
 import { WebSocketServer } from 'ws';
 import { createMediaStreamServer } from './stream.js';
 

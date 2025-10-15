@@ -1,5 +1,6 @@
 import fs from 'fs';
-import { cosine } from 'ml-distance';
+import * as mlDistance from 'ml-distance';
+const cosine = mlDistance.similarity.cosine;
 
 
 let store: { url: string; text: string; embedding: number[] }[] | null = null;
